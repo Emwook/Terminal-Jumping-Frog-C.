@@ -1,0 +1,13 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     "/Users/emilia2/Desktop/Desktop - Emilia’s MacBook Air/projects/c/project/p1_frog/main"
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _initializeBoard, symObjAddr: 0x0, symBinAddr: 0x100000670, symSize: 0x1F0 }
+  - { offset: 0x42, size: 0x8, addend: 0x0, symName: _initializeBoard, symObjAddr: 0x0, symBinAddr: 0x100000670, symSize: 0x1F0 }
+  - { offset: 0x9E, size: 0x8, addend: 0x0, symName: _readArtFromFile, symObjAddr: 0x1F0, symBinAddr: 0x100000860, symSize: 0x1A0 }
+  - { offset: 0x14E, size: 0x8, addend: 0x0, symName: _createFrog, symObjAddr: 0x390, symBinAddr: 0x100000A00, symSize: 0x50 }
+  - { offset: 0x172, size: 0x8, addend: 0x0, symName: _placeObject, symObjAddr: 0x3E0, symBinAddr: 0x100000A50, symSize: 0x110 }
+  - { offset: 0x214, size: 0x8, addend: 0x0, symName: _drawBoard, symObjAddr: 0x4F0, symBinAddr: 0x100000B60, symSize: 0xA0 }
+  - { offset: 0x270, size: 0x8, addend: 0x0, symName: _moveFrog, symObjAddr: 0x590, symBinAddr: 0x100000C00, symSize: 0x240 }
+  - { offset: 0x312, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x7D0, symBinAddr: 0x100000E40, symSize: 0x10B }
+...

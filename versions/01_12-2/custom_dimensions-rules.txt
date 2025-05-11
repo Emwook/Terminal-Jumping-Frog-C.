@@ -1,0 +1,54 @@
+1. you can input custom models of objects that are in the game like this: 
+
+    name
+    x y
+    abcd
+    efgh
+    ijkl
+
+    where x,y are dimensions of your input, if you exceed the dimensions with the object, it won't be counted. Remember to include whitespace characters if needed.
+
+    example:
+
+    frog
+    4 5
+    0^0
+    /:o:\
+    |*| 
+    / \ 
+
+    or:
+
+    lane
+    7 5
+    _____
+        
+        
+    == ==
+        
+        
+    _____
+
+
+2. if no custom model is put into the custom_input.txt file then default models are used. All of them are accesible to see in the defualt_input.txt file.
+    This file should not be edited in any way because it may interfere in the inner workings of the game.
+
+3. specific numbers that specify the gameplay are supposed to be put into the file game_setup.txt in specific order:
+
+    name                    correct values                 default
+
+    Board Size              number 20-100                  40
+    Game Difficulty         text easy/medium/hard          medium
+    Frog Jumping Distance   number 1-25                    5
+    Number of Levels        number 1-5                     3
+
+4. default values are being stored in the file default_setup.txt, this file should not be edited in any way because it may interfere in the inner workings of the game.
+
+5. due to required playability models can only be in specific dimension ranges, if any exceed those, game uses default values instead. the rules are:
+
+    name              value name            minimum (x, y)            maximum (x, y)
+
+    frog              frog_size             1          1              road_size/2   road_size/2
+    car               car_size              1          1              road_size/2   road_size/2
+    road              road                  3*car_size 3*car_size     board_size/2  board_size/2
+    board             board_size            20         20             100           100
